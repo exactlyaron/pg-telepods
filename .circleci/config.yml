@@ -28,8 +28,6 @@ jobs:
       - store_test_results:
           path: reports
       - store_artifacts:
-          path: /.circleci-task-data/circle-test-results
-      - store_artifacts:
           path: reports
   lint:
     docker:
