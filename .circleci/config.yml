@@ -20,7 +20,7 @@ jobs:
       - run:
           name: test
           command: |
-            TEST=$(circleci tests glob "**/test/*.js" | circleci tests split --split-by=timings)
+            TEST=$(circleci tests glob "./test/*.js" | circleci tests split --split-by=timings)
             npm run circle $TEST
       - run:
           name: codecov
