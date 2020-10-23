@@ -20,17 +20,11 @@ jobs:
       - run:
           name: test
           command: |
-            TEST=$(circleci tests glob "./test/*.js" | circleci tests split --split-by=timings)
-            npm run circle $TEST
+            TEST=$(circleci tests glob "./test/*.js" | circleci tests split)
+            npm test $TEST
       - run:
           name: codecov
           command: npm run coverage
-      - store_test_results:
-          path: reports
-      - store_artifacts:
-          path: /.circleci-task-data/circle-test-results
-      - store_artifacts:
-          path: ./reports/mocha/test-results.xml
   lint:
     docker:
       - image: cimg/node:lts
