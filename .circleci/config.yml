@@ -30,7 +30,7 @@ jobs:
       - store_artifacts:
           path: /.circleci-task-data/circle-test-results
       - store_artifacts:
-          path: reports
+          path: ./reports/mocha/test-results.xml
   lint:
     docker:
       - image: cimg/node:lts
