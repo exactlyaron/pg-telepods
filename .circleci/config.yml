@@ -55,7 +55,7 @@ workflows:
   version: 2
   test_and_release:
     jobs:
-    - unit test:
+    - unit test
     - lint
     - release:
         requires:
