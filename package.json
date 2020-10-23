@@ -32,17 +32,18 @@
     "@wmfs/supercopy": "1.40.0"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "5.0.1",
+    "@semantic-release/git": "9.0.0",
+    "@wmfs/hl-pg-client": "1.25.0",
     "chai": "4.2.0",
     "codecov": "3.8.0",
     "conventional-changelog-metahub": "4.0.1",
     "cz-conventional-changelog": "3.3.0",
     "mocha": "8.2.0",
+    "mocha-junit-reporter": "2.0.0",
     "nyc": "15.1.0",
     "semantic-release": "17.2.1",
-    "standard": "15.0.0",
-    "@semantic-release/changelog": "5.0.1",
-    "@semantic-release/git": "9.0.0",
-    "@wmfs/hl-pg-client": "1.25.0"
+    "standard": "15.0.0"
   },
   "scripts": {
     "lint": "standard",
